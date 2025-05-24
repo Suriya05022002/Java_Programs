@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Java Programs</title>
+       <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <h2>Java Programs</h2>
+          <div class="theme-toggle">
+            <i class="fas fa-sun"></i>
+            <label class="switch">
+              <input type="checkbox" id="theme-switch" />
+              <span class="slider"></span>
+            </label>
+            <i class="fas fa-moon"></i>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3>Filter by Category</h3>
+          <div class="filter-options">
+            <label class="filter-option">
+              <input type="checkbox" value="basic" checked />
+              <span class="checkmark"></span>
+              <span>Basic Programs</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" value="intermediate" checked />
+              <span class="checkmark"></span>
+              <span>Intermediate Programs</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" value="advanced" checked />
+              <span class="checkmark"></span>
+              <span>Advanced Programs</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="program-list-container">
+          <h3>Programs</h3>
+          <div class="program-list" id="program-list">
+            <!-- Programs will be populated here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <header class="main-header">
+          <h1>Java Programs</h1>
+          <p class="subtitle">Master Java programming with practical examples</p>
+
+          <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+            <div class="progress-text">
+              Program <span id="current-program">1</span> of
+              <span id="total-programs">39</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="program-container">
+          <div class="program-card" id="program-card">
+            <!-- Program content will be loaded here -->
+          </div>
+
+          <div class="controls">
+            <button id="prev-btn" class="btn">
+              <i class="fas fa-arrow-left"></i> Previous
+            </button>
+            <button id="show-output-btn" class="btn primary">
+              <i class="fas fa-play"></i> Show Output
+            </button>
+            <button id="next-btn" class="btn">
+              Next <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <footer>
+          <p>
+            © 2025 Java Programs Collection | Designed by
+            <span class="gowthamraj">Gowthamraj Network</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+ <script src="script.js"></script>
+  
+  </body>
+</html>
